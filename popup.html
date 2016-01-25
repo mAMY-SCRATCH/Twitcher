@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+	  @font-face{
+	  	font-family: Twitch;
+		src: url(DIMIS.TTF);	
+	  }
+	  #popup{
+		width: 400px;
+		height : 600px;
+		background-color: #9370DB;
+	  }
+      #title {
+        white-space: pre;
+		text-align: center;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 400px;
+		height : 100px;
+		background-color: #4B0082;
+		color: white;
+		text-shadow : 3px 3px black;
+		border-color: black;
+		font-family:Twitch;
+		font-size: 200%;
+      }
+	  #titleText {
+	  position:absolute; 
+	  top: -1px; 
+	  right: 100px;
+	  }
+	  #textArea{
+		font-weight: bold;
+		font-size: 125%;
+		margin : 5px;
+	  }
+	  #textAreaURL{
+	  
+	  }
+    </style>
+    
+  </head>
+  <body>
+	<div id="popup">
+    <div id="title"><h1 id = "titleText">Twitcher</h1></div>
+	<p id="textArea">URL: <input id="textAreaURL" name="URL" value="" type="text"></p>
+	<p id="textArea">Directory: <input id="textAreaURL" name="Save" value="" type="text"></p>
+	</div>
+  </body>
+</html>
+
