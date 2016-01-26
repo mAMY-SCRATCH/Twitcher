@@ -1,6 +1,3 @@
-// Copyright (c) 2014 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
 
 /**
  * Get the current URL.
@@ -91,6 +88,7 @@ function getImageUrl(searchTerm, callback, errorCallback) {
 function renderStatus(statusText) {
   document.getElementById('status').textContent = statusText;
 }
+
 
 document.addEventListener('DOMContentLoaded', function() {
   getCurrentTabUrl(function(url) {
